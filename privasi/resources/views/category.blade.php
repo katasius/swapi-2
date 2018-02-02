@@ -1,5 +1,8 @@
 <div class="row">
-@foreach($json as $key => $data)
+
+@foreach($json as $json_a)
+@foreach($json_a as $key => $data)
+
 <div class="col-lg-4 col-md-6 mb-4">
   <div class="card h-100">
     <a href="#"><img class="card-img-top col-md-4"  src="{{asset( 'assets/img/'.$data['name'] )}}.jpg" alt="picture"></a>
@@ -25,5 +28,7 @@
     </div>
   </div>
 
-@endforeach
+  @endforeach
+  @endforeach
+
 </div>
